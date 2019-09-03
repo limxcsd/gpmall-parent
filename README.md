@@ -28,7 +28,6 @@
 | gpmall-commons 公共的组件                                    | jar       | 公共组件         |
 | gpmall-front  商城的前端项目                             | 前端项目  | 使用vue、node、es等前端技术开发                      |
 | gpmall-parent 父控文件，用来统一管理所有jar包                | 父控文件  | 用来统一管理所有项目的jar包的版本                    |
-                     |
 | gpmall-provider-pay  提供支付处理能力                                | dubbo服务 | 20883端口                                            |
 | gpmall-provider-shopping，提供购物车、推荐商品、商品等服务           | dubbo服务 | 20881端口                                            |
 | gpmall-provider-user ，提供用户相关服务                              | dubbo服务 | 20880端口                                            |
