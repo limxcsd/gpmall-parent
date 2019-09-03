@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider-api/gpmall-provider-comment-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider-api/gpmall-provider-coupon-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider-api/gpmall-provider-order-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider-api/gpmall-provider-pay-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider-api/gpmall-provider-search-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider-api/gpmall-provider-shopping-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider-api/gpmall-provider-user-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider/gpmall-provider-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider/gpmall-provider-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider/gpmall-provider-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider/gpmall-provider-shopping" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-provider/gpmall-provider-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-web/gpmall-shopping-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/gpmall-web/gpmall-user-web" charset="UTF-8" />
+  </component>
+</project>

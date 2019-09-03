@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>gpmall-parent</artifactId>
+        <groupId>com.study.gpmall</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>gpmall-provider</artifactId>
+
+    <packaging>pom</packaging>
+    <modules>
+        <module>gpmall-provider-user</module>
+        <module>gpmall-provider-order</module>
+        <module>gpmall-provider-shopping</module>
+        <module>gpmall-provider-search</module>
+        <module>gpmall-provider-pay</module>
+    </modules>
+
+
+</project>

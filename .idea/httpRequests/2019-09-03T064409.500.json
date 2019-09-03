@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-09-03T10:44:09.713+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "No message available",
+  "path": "/goods/recommend"
+}

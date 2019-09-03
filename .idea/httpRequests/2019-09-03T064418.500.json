@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-09-03T10:44:18.802+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Failed to invoke the method getRecommendGoods in the service com.study.gpmall.shopping.services.IGoodsService. Tried 3 times of the providers [192.168.0.193:20881] (1/1) from the registry 192.168.126.128:2181 on the consumer 192.168.0.193 using the dubbo version 2.7.2. Last error is: Invoke remote method timeout. method: getRecommendGoods, provider: dubbo://192.168.0.193:20881/com.study.gpmall.shopping.services.IGoodsService?application=gpmall-shopping&check=false&deprecated=false&dubbo=2.0.2&interface=com.study.gpmall.shopping.services.IGoodsService&lazy=false&methods=getRecommendGoods,getAllProduct,getGoodsDetail&pid=2884&qos-enable=false&register.ip=192.168.0.193&release=2.7.2&remote.application=shopping-service&side=consumer&sticky=false&timeout=3000&timestamp=1567507098029, cause: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2019-09-03 18:44:15.769, end time: 2019-09-03 18:44:18.799, client elapsed: 1 ms, server elapsed: 3029 ms, timeout: 3000 ms, request: Request [id=12, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=getRecommendGoods, parameterTypes=[], arguments=[], attachments={path=com.study.gpmall.shopping.services.IGoodsService, interface=com.study.gpmall.shopping.services.IGoodsService, version=0.0.0, timeout=3000}]], channel: /192.168.0.193:62727 -> /192.168.0.193:20881",
+  "path": "/goods/recommend"
+}

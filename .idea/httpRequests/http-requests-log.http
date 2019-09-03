@@ -1,0 +1,32 @@
+GET http://localhost:8081/goods/recommend
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-03T064418.500.json
+
+###
+
+GET http://localhost:8081/goods/recommend
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-03T064409.500.json
+
+###
+
+GET http://localhost:8081/goods/recommend
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-03T064213.500.json
+
+###
+
+GET http://localhost:9999/goods/recommend
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-09-03T064136.200.html
+
+###
+
