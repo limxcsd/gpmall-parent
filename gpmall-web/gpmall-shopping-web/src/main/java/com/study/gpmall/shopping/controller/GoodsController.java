@@ -38,7 +38,7 @@ public class GoodsController {
     public ResponseData recommend() {
         RecommendResponse response = goodsService.getRecommendGoods();
         if (response.getCode().equals(ResultCodeConstants.SUCCESS.getCode())) {
-            return new ResponseUtils().setData(response.getList());
+            return new ResponseUtils().setData(response.getPanelContentItemDtos());
         }
         return new ResponseUtils().setErrorMsg(response.getMsg());
     }
@@ -53,7 +53,7 @@ public class GoodsController {
         AllGoodsCateResponse response = goodsService.getAllGoodsCate(request);
 
         if (response.getCode().equals(ResultCodeConstants.SUCCESS.getCode())) {
-            return new ResponseUtils().setData(response.getList());
+            return new ResponseUtils().setData(response.getProductCateDtoList());
         }
         return new ResponseUtils().setErrorMsg(response.getMsg());
     }

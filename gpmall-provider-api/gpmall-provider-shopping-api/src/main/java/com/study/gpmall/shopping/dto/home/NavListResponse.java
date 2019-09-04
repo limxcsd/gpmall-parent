@@ -16,5 +16,5 @@ import java.util.List;
 @ApiModel("首页导航返回参数")
 public class NavListResponse extends AbstractResponse {
 
-    private List<PanelContentDto> list;
+    private List<PanelContentDto> pannelContentDtos;
 }

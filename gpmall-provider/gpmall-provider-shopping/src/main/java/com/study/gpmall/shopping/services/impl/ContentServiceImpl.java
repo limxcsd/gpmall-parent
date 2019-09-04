@@ -41,7 +41,7 @@ public class ContentServiceImpl implements IContentService {
             criteriaContent.andEqualTo("panelId", GlobalConstants.HEADER_PANEL_ID);
             List<PanelContent> contentList = panelContentMapper.selectByExample(example);
             //添加缓存操作 TODO
-            response.setList(contentConverter.panelContents2Dto(contentList));
+            response.setPannelContentDtos(contentConverter.panelContents2Dto(contentList));
             response.setCode(ResultCodeConstants.SUCCESS.getCode());
             response.setMsg(ResultCodeConstants.SUCCESS.getMessage());
         }catch (Exception e){

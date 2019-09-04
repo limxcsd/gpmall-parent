@@ -38,7 +38,7 @@ public class HomeController {
     public ResponseData navigation() {
         NavListResponse response = contentService.queryNavList();
         if (response.getCode().equals(ResultCodeConstants.SUCCESS.getCode())) {
-            return new ResponseUtils().setData(response.getList());
+            return new ResponseUtils().setData(response.getPannelContentDtos());
         }
         return new ResponseUtils<>().setErrorMsg(response.getMsg());
     }
@@ -49,7 +49,7 @@ public class HomeController {
     public ResponseData homepage() {
         HomePageResponse response = homePageService.homepage();
         if (response.getCode().equals(ResultCodeConstants.SUCCESS.getCode())) {
-            return new ResponseUtils().setData(response.getPanelList());
+            return new ResponseUtils().setData(response.getPanelContentItemDtos());
         }
         return new ResponseUtils().setErrorMsg(response.getMsg());
     }

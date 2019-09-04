@@ -14,5 +14,5 @@ import java.util.List;
 @Data
 public class AllGoodsCateResponse extends AbstractResponse {
 
-    private List<ProductCateDto> list;
+    private List<ProductCateDto> productCateDtoList;
 }

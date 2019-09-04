@@ -54,7 +54,7 @@ public class HomePageServiceImpl implements IHomePageService {
             if (StringUtils.isNoneEmpty(json)) {
                 List<PanelDto> panelDtoList = JSON.parseArray(json, PanelDto.class);
                 Set set = new HashSet(panelDtoList);
-                response.setPanelList(set);
+                response.setPanelContentItemDtos(set);
                 return response;
             }
             Example example = new Example(Panel.class);
@@ -71,7 +71,7 @@ public class HomePageServiceImpl implements IHomePageService {
                 panelContentItemDtos.add(panelDto);
             });
             redisUtils.set(GlobalConstants.HOMEPAGE_CACHE_KEY, JSON.toJSONString(panelContentItemDtos), GlobalConstants.HOMEPAGE_EXPIRE_TIME);
-            response.setPanelList(panelContentItemDtos);
+            response.setPanelContentItemDtos(panelContentItemDtos);
         } catch (Exception e) {
             log.error("HomePageServiceImpl.homepage Occur Exception :" + e);
             ExceptionProcessorUtils.wrapperHandlerException(response, e);

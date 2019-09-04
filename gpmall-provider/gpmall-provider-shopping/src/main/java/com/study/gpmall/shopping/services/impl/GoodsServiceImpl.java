@@ -68,7 +68,7 @@ public class GoodsServiceImpl implements IGoodsService {
             if (StringUtils.isNotBlank(json)) {
                 List<PanelDto> panelContentItemDtoList = JSON.parseArray(json, PanelDto.class);
                 Set<PanelDto> panelDtoSet = new HashSet<>(panelContentItemDtoList);
-                response.setList(panelDtoSet);
+                response.setPanelContentItemDtos(panelDtoSet);
                 return response;
             }
 
@@ -80,7 +80,7 @@ public class GoodsServiceImpl implements IGoodsService {
                 panelDto.setPanelContentItems(contentConverter.panelContentItem2Dto(panelContentItems));
                 panelContentItemDtos.add(panelDto);
             });
-            response.setList(panelContentItemDtos);
+            response.setPanelContentItemDtos(panelContentItemDtos);
             redisUtils.set(GlobalConstants.RECOMMEND_PANEL_CACHE_KEY, JSON.toJSONString(panelContentItemDtos), GlobalConstants.RECOMMEND_CACHE_EXPIRE);
             response.setCode(ResultCodeConstants.SUCCESS.getCode());
             response.setMsg(ResultCodeConstants.SUCCESS.getMessage());
@@ -99,7 +99,7 @@ public class GoodsServiceImpl implements IGoodsService {
             String json = (String) redisUtils.get(GlobalConstants.PRODUCT_CATE_CACHE_KEY);
             if (StringUtils.isNotBlank(json)) {
                 List<ProductCateDto> productCateDtos = JSON.parseArray(json, ProductCateDto.class);
-                response.setList(productCateDtos);
+                response.setProductCateDtoList(productCateDtos);
                 return response;
             }
             Example itemCatExample = new Example(ItemCat.class);
@@ -116,7 +116,7 @@ public class GoodsServiceImpl implements IGoodsService {
 
             List<ItemCat> itemCats = itemCatMapper.selectByExample(itemCatExample);
             List<ProductCateDto> productCateDtoList = productCateConverter.items2Dto(itemCats);
-            response.setList(productCateDtoList);
+            response.setProductCateDtoList(productCateDtoList);
 
             redisUtils.set( GlobalConstants.PRODUCT_CATE_CACHE_KEY,
                     JSON.toJSON(productCateDtoList).toString(),

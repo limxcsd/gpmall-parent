@@ -14,5 +14,5 @@ import java.util.Set;
 @Data
 public class HomePageResponse extends AbstractResponse {
 
-    private Set<PanelDto> panelList;
+    private Set<PanelDto> panelContentItemDtos;
 }

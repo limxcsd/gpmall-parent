@@ -6,21 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="gpmall-provider-shopping-api" />
         <module name="gpmall-provider-shopping" />
         <module name="gpmall-provider-search" />
         <module name="gpmall-provider-order" />
-        <module name="gpmall-user-web" />
         <module name="gpmall-common" />
         <module name="gpmall-provider-user-api" />
-        <module name="gpmall-shopping-web" />
+        <module name="gpmall-provider-user" />
         <module name="gpmall-provider-pay-api" />
         <module name="gpmall-provider-order-api" />
-        <module name="gpmall-provider-shopping-api" />
+        <module name="gpmall-shopping-web" />
         <module name="gpmall-provider-coupon-api" />
         <module name="gpmall-provider-comment-api" />
         <module name="gpmall-provider-pay" />
         <module name="gpmall-provider-search-api" />
-        <module name="gpmall-provider-user" />
+        <module name="gpmall-user-web" />
       </profile>
     </annotationProcessing>
   </component>

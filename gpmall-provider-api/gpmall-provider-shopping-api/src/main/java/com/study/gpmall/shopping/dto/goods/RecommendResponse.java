@@ -14,5 +14,5 @@ import java.util.Set;
  */
 @Data
 public class RecommendResponse extends AbstractResponse {
-    private Set<PanelDto> list;
+    private Set<PanelDto> panelContentItemDtos;
 }
